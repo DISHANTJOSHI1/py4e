@@ -1,0 +1,13 @@
+hrs = input('Enter hours: ')
+rt = input('Enter rate: ')
+try:
+    hours=float(hrs)
+    rate=float(rt)
+except:
+    print("Enter a numeric value...")
+    quit()
+if hours<=40:
+    pay = hours*rate
+elif hours>40:
+    pay = (hours-40)*1.5*rate + 40 * rate
+print('Total pay is: ',pay)
