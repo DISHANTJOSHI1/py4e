@@ -1,0 +1,11 @@
+def occurX(arr, int): 
+    count = 0
+    for num in arr: 
+        if (num == int): 
+            count = count + 1
+    return count 
+  
+
+arr = [2,3,4,3,2,1] 
+int = 4
+print('{} has occurred {} times'.format(int, occurX(arr, int))) 
